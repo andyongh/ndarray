@@ -50,7 +50,7 @@ int ndarray_set_point(const ndarray_t* array, uint64_t* idx, const void* data_po
 int ndarray_set_point_d(const ndarray_t* array, uint64_t* idx, double data_point);
 int ndarray_set_point_f(const ndarray_t* array, uint64_t* idx, float data_point);
 int ndarray_set_point_u64(const ndarray_t* array, uint64_t* idx, uint64_t data_point);
-int ndarray_set_point_u32(const ndarray_t* array, uint64_t* idx, uint64_t data_point);
+int ndarray_set_point_u32(const ndarray_t* array, uint64_t* idx, uint32_t data_point);
 void* ndarray_get_point(const ndarray_t* array, uint64_t* idx);
 uint32_t ndarray_ndim(const ndarray_t* array);
 const uint64_t* ndarray_shape(const ndarray_t* array);
