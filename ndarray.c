@@ -60,7 +60,7 @@ static size_t calculate_size(const uint64_t* dims, uint32_t nd)
 
 ndarray_t* ndarray_create(uint64_t* dimensions, uint32_t nd, char dtype)
 {
-    ndarray_t* array = malloc(sizeof(ndarray_t));
+    ndarray_t* array = calloc(1, sizeof(ndarray_t));
     if (!array) return NULL;
 
     array->nd    = nd;
